@@ -6,3 +6,6 @@ __pycache__
 
 # ignore test build
 dist/
+
+# ignore vscode files
+.vscode
