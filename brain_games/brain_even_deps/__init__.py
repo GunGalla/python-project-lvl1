@@ -1,1 +1,1 @@
-"""__init__.py for brain-even directory"""
+"""__init__.py for brain-even directory."""

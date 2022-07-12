@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Script to start the brain-even game."""
 
-import brain_games.brain_even_deps.asking_user as ask
+import asking_user as ask
 
 
 def main():
@@ -9,8 +9,7 @@ def main():
     ask.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     ask.ask_is_even()
-    
+
 
 if __name__ == '__main__':
     main()
-    
