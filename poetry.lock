@@ -392,11 +392,11 @@ python-versions = "*"
 
 [[package]]
 name = "stevedore"
-version = "3.5.0"
+version = "4.0.0"
 description = "Manage dynamic plugins for Python applications"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.8"
 
 [package.dependencies]
 pbr = ">=2.0.0,<2.1.0 || >2.1.0"
