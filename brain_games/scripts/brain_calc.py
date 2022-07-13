@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """Script to start the brain-even game."""
 
-from welcome import welcome_user
+from calc_game import brain_calc_game
 
 
 def main():
     """Start the game."""
-    welcome_user()
-    print('What is the result of the expression?')
+    brain_calc_game()
 
 
 if __name__ == '__main__':
