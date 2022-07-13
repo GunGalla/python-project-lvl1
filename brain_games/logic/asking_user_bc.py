@@ -12,12 +12,10 @@ def ask_result():
     """Define user's answer correct or not."""
     index = 0
     while index < 3:
-        num1 = randint(1, 10)
-        num2 = randint(1, 10)
-        number = (f'{num1} {choice(operators_list)} {num2}')
+        number = (f'{randint(1, 10)} {choice(operators_list)} {randint(1,10)}')
         user_question(number)
         answer = input('Your answer: ')
-        if eval(number) == int(answer):
+        if str(eval(number)) == answer:
             print('Correct!')
             index += 1
         else:
