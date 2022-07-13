@@ -310,14 +310,6 @@ flake8 = ">=3.9.1"
 flake8-polyfill = ">=1.0.2,<2"
 
 [[package]]
-name = "prompt"
-version = "0.4.1"
-description = "Library for prompting input on the command line."
-category = "main"
-optional = false
-python-versions = ">=3.3"
-
-[[package]]
 name = "pycodestyle"
 version = "2.8.0"
 description = "Python style guide checker"
@@ -454,7 +446,7 @@ typing_extensions = ">=3.6,<5.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "663d9551d4cf5915c0214bd651121003e64ea0993a1a7604e8067ead8b3b144f"
+content-hash = "e21d51d1abcf68423bc5e1272a3bb579aa6bc2765960e934550ac62a2569f62d"
 
 [metadata.files]
 astor = []
@@ -490,10 +482,6 @@ isort = []
 mccabe = []
 pbr = []
 pep8-naming = []
-prompt = [
-    {file = "prompt-0.4.1-py3-none-any.whl", hash = "sha256:98527de8dc3f0aa29669a39fbffeaf578ba6654dc836f737b6a5c6f9279002b7"},
-    {file = "prompt-0.4.1.tar.gz", hash = "sha256:8a7694b88f8c65188a983315e72582bf42fcc251b97042be1d2a2ad1aa0ebe0e"},
-]
 pycodestyle = []
 pydocstyle = []
 pyflakes = []
