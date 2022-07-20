@@ -2,8 +2,7 @@
 
 from random import randint
 
-import correct_answer_be as ans
-from is_even import is_number_even
+from correct_answer_be import correct_answer
 from question import user_question
 from welcome import name
 
@@ -15,16 +14,13 @@ def ask_is_even():
         number = randint(1, 100)
         user_question(number)
         answer = input('Your answer: ')
-        if (is_number_even(number) is True and answer == 'yes') or\
-           (is_number_even(number) is False and answer == 'no'):
+        if correct_answer(number) == answer:
             print('Correct!')
             index += 1
         else:
-            is_number_even(number)
-            ans.correct_answer()
             print(
                 f"'{answer}' is wrong answer ;(. \
-Correct answer was '{ans.true_answer}'.",
+Correct answer was '{correct_answer(number)}'.",
             )
             print(f"Let's try again, {name}!")
             return

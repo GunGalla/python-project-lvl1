@@ -1,23 +1,17 @@
 """Logic module for Brain-games."""
 
-from random import randint
 
-from is_even import is_number_even
-
-number = randint(1, 100)
-
-
-def correct_answer():
+def correct_answer(num):
     """Define correct answer.
+
+    Args:
+        num: a number which askes is even or not
 
     Returns:
         return: variable with correct answer
     """
-    if is_number_even(number) is True:
+    if (num % 2 == 0) is True:
         ans = 'yes'
     else:
         ans = 'no'
     return ans
-
-
-true_answer = correct_answer()
