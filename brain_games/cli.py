@@ -3,5 +3,5 @@
 
 def welcome_user():
     """Ask user name and greet him."""
-    name = prompt.string('May I have your name? ')
+    name = input('May I have your name? ')
     print(f'Hello, {name}!')
