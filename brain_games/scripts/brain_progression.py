@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Script to start the brain-progression game."""
 
-from progression_game import brain_progression_game
+from brain_games.games.progression_game import brain_progression_game
 
 
 def main():

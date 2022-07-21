@@ -1,7 +1,7 @@
 """Logic module for brain-gcd game."""
 
-from asking_user_gcd import ask_gcd
-from welcome import welcome_user
+from brain_games.logic.asking_user_gcd import ask_gcd
+from brain_games.logic.welcome import welcome_user
 
 
 def brain_gcd_game():

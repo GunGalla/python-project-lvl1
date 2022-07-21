@@ -2,9 +2,9 @@
 
 from random import randint
 
-from correct_answer_be import correct_answer
-from question import user_question
-from welcome import name
+from brain_games.logic.correct_answer_be import correct_answer
+from brain_games.logic.question import user_question
+from brain_games.logic.welcome import name
 
 
 def ask_is_even():

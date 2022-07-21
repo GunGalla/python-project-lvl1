@@ -1,7 +1,7 @@
 """Logic module for brain-progression game."""
 
-from asking_user_progression import ask_progression
-from welcome import welcome_user
+from brain_games.logic.asking_user_progression import ask_progression
+from brain_games.logic.welcome import welcome_user
 
 
 def brain_progression_game():

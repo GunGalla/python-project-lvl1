@@ -2,9 +2,9 @@
 
 from random import randint
 
-from progression import ar_progression
-from question import user_question
-from welcome import name
+from brain_games.logic.progression import ar_progression
+from brain_games.logic.question import user_question
+from brain_games.logic.welcome import name
 
 
 def ask_progression():

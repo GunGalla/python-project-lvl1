@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Script to start the brain-prime game."""
 
-from prime_game import brain_prime_game
+from brain_games.games.prime_game import brain_prime_game
 
 
 def main():
