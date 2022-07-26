@@ -3,6 +3,8 @@
 from brain_games.logic.question import user_question
 from brain_games.logic.welcome import name
 
+ITERATIONS = 3
+
 
 def ask_user(find_variables):
     """Define user's answer correct or not.
@@ -11,7 +13,7 @@ def ask_user(find_variables):
         find_variables: defines question text and correct answer
     """
     index = 0
-    while index < 3:
+    while index < ITERATIONS:
         find_variables()
         variables = find_variables()
         user_question(variables[0])
@@ -27,5 +29,5 @@ Correct answer was '{variables[1]}'.",
             print(f"Let's try again, {name}!")
             return
 
-    if index == 3:
+    if index == ITERATIONS:
         print(f'Congratulations, {name}!')

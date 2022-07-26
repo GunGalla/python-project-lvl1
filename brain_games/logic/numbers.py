@@ -6,7 +6,7 @@ from random import choice, randint
 from brain_games.logic.progression import ar_progression
 
 
-def number_ans_be():
+def find_number_answer_be():
     """Define number variable for brain-even.
 
     Returns:
@@ -20,7 +20,7 @@ def number_ans_be():
     return number, correct_answer
 
 
-def number_ans_bc():
+def find_number_answer_bc():
     """Define number variable and answer for brain-calc.
 
     Returns:
@@ -32,7 +32,7 @@ def number_ans_bc():
     return number, correct_answer
 
 
-def number_ans_gcd():
+def find_number_answer_gcd():
     """Define number variable and answer for brain-gdc.
 
     Returns:
@@ -45,7 +45,7 @@ def number_ans_gcd():
     return number, correct_answer
 
 
-def number_ans_progression():
+def find_number_answer_progression():
     """Define number variable and answer for brain-progression.
 
     Returns:
@@ -59,7 +59,7 @@ def number_ans_progression():
     return number, correct_answer
 
 
-def number_ans_bp():
+def find_number_answer_bp():
     """Define number variable and answer for brain-prime.
 
     Returns:
