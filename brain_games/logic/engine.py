@@ -3,8 +3,13 @@
 from brain_games.logic.question import user_question
 from brain_games.logic.welcome import name
 
+
 def ask_user(find_variables):
-    """Define user's answer correct or not."""
+    """Define user's answer correct or not.
+
+    Args:
+        find_variables: defines question text and correct answer
+    """
     index = 0
     while index < 3:
         find_variables()

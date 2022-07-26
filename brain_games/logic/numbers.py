@@ -1,14 +1,14 @@
 """Number and answer variables for brain-games."""
 
 import math
-from random import randint, choice
+from random import choice, randint
 
 from brain_games.logic.progression import ar_progression
 
 
 def number_ans_be():
     """Define number variable for brain-even.
-    
+
     Returns:
         return: correct number variable
     """
@@ -22,7 +22,7 @@ def number_ans_be():
 
 def number_ans_bc():
     """Define number variable and answer for brain-calc.
-    
+
     Returns:
         return: correct number and answer variable
     """
@@ -34,7 +34,7 @@ def number_ans_bc():
 
 def number_ans_gcd():
     """Define number variable and answer for brain-gdc.
-    
+
     Returns:
         return: correct number and answer variable
     """
@@ -47,7 +47,7 @@ def number_ans_gcd():
 
 def number_ans_progression():
     """Define number variable and answer for brain-progression.
-    
+
     Returns:
         return: correct number and answer variable
     """
@@ -61,11 +61,11 @@ def number_ans_progression():
 
 def number_ans_bp():
     """Define number variable and answer for brain-prime.
-    
+
     Returns:
         return: correct number and answer variable
     """
-    number = randint(1,100)
+    number = randint(1, 100)
     divider = 2
     while divider ** 2 <= number and number % divider != 0:
         divider += 1
