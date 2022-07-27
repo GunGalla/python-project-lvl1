@@ -1,19 +1,22 @@
 """Engine function for brain-games."""
 
 from brain_games.logic.question import user_question
-from brain_games.logic.welcome import name
+from brain_games.logic.welcome import name, welcome_user
 
-ITERATIONS = 3
+GAME_ROUNDS = 3
 
 
-def ask_user(find_variables):
+def ask_user(find_variables, rules):
     """Define user's answer correct or not.
 
     Args:
         find_variables: defines question text and correct answer
+        rules: defines the current game rules
     """
     index = 0
-    while index < ITERATIONS:
+    welcome_user()
+    rules()
+    while index < GAME_ROUNDS:
         find_variables()
         variables = find_variables()
         user_question(variables[0])
@@ -29,5 +32,5 @@ Correct answer was '{variables[1]}'.",
             print(f"Let's try again, {name}!")
             return
 
-    if index == ITERATIONS:
+    if index == GAME_ROUNDS:
         print(f'Congratulations, {name}!')

@@ -2,11 +2,9 @@
 
 from brain_games.logic.engine import ask_user
 from brain_games.logic.numbers import find_number_answer_progression
-from brain_games.logic.welcome import welcome_user
+from brain_games.logic.rules import brain_progression_rules
 
 
 def brain_progression_game():
     """Start and play the game."""
-    welcome_user()
-    print('What number is missing in the progression?')
-    ask_user(find_number_answer_progression)
+    ask_user(find_number_answer_progression, brain_progression_rules)
