@@ -13,11 +13,12 @@ def brain_even_round_generator():
         return: correct number and answer variable
     """
     number = randint(1, 100)
+    question_text = number
     if number % 2 == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return number, correct_answer
+    return question_text, correct_answer
 
 
 def brain_even_game():

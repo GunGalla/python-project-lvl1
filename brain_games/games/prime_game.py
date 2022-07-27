@@ -13,6 +13,7 @@ def brain_prime_round_generator():
         return: correct number and answer variable
     """
     number = randint(1, 100)
+    question_text = number
     divider = 2
     while divider ** 2 <= number and number % divider != 0:
         divider += 1
@@ -20,7 +21,7 @@ def brain_prime_round_generator():
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return number, correct_answer
+    return question_text, correct_answer
 
 
 def brain_prime_game():

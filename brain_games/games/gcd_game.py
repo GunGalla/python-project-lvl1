@@ -13,10 +13,10 @@ def brain_gcd_round_generator():
     Returns:
         return: correct number and answer variable
     """
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
-    number = (f'{number1} {number2}')
-    correct_answer = str(math.gcd(number1, number2))
+    first_number = randint(1, 100)
+    second_number = randint(1, 100)
+    number = (f'{first_number} {second_number}')
+    correct_answer = str(math.gcd(first_number, second_number))
     return number, correct_answer
 
 

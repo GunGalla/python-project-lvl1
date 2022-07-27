@@ -40,8 +40,8 @@ def brain_progress_round_generator():
     )
     correct_answer = progression[hidden_number]
     progression[hidden_number] = '..'
-    number = ' '.join(progression)
-    return number, correct_answer
+    question_text = ' '.join(progression)
+    return question_text, correct_answer
 
 
 def brain_progression_game():

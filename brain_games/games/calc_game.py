@@ -12,13 +12,13 @@ def brain_calc_round_generator():
     Returns:
         return: correct number and answer variable
     """
-    number1 = randint(1, 10)
-    number2 = randint(1, 10)
+    first_number = randint(1, 10)
+    second_number = randint(1, 10)
     operators_list = ('+', '-', '*')
-    number = (f'{number1} \
-{choice(operators_list)} {number2}')
-    correct_answer = str(eval(number))
-    return number, correct_answer
+    question_text = (f'{first_number} \
+{choice(operators_list)} {second_number}')
+    correct_answer = str(eval(question_text))
+    return question_text, correct_answer
 
 
 def brain_calc_game():
