@@ -1,7 +1,7 @@
 """Logic module for brain-games."""
 
 
-def user_question(ask):
+def question_to_user(ask):
     """Ask user a question.
 
     Args:

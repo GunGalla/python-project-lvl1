@@ -1,7 +1,7 @@
 """Logic module for brain-games."""
 
 print('Welcome to the Brain Games!')
-name = input('May I have your name? ')
+user_name = input('May I have your name? ')
 
 
 def welcome_user():
@@ -10,5 +10,5 @@ def welcome_user():
     Returns:
         return: user greeting
     """
-    print(f'Hello, {name}!')
-    return name
+    print(f'Hello, {user_name}!')
+    return user_name
