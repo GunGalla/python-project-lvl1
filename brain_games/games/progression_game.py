@@ -31,16 +31,16 @@ def brain_progress_round_generator():
     Returns:
         return: correct number and answer variable
     """
-    progress_start = randint(1, 10)
-    progress_step = randint(1, 7)
+    progression_start = randint(1, 10)
+    progression_step = randint(1, 7)
     number_of_elements = 10
     hidden_number = randint(1, 9)
-    progress = arithmetic_progression(
-        progress_start, progress_step, number_of_elements,
+    progression = arithmetic_progression(
+        progression_start, progression_step, number_of_elements,
     )
-    correct_answer = progress[hidden_number]
-    progress[hidden_number] = '..'
-    number = ' '.join(progress)
+    correct_answer = progression[hidden_number]
+    progression[hidden_number] = '..'
+    number = ' '.join(progression)
     return number, correct_answer
 
 
