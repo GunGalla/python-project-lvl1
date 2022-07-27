@@ -1,4 +1,4 @@
-"""Logic module for brain-progress game."""
+"""Logic module for brain-progression game."""
 
 from random import randint
 
@@ -6,8 +6,8 @@ from brain_games.logic.engine import brain_games_start
 from brain_games.logic.rules import brain_progress_rules
 
 
-def arithmetic_progress(start, step, iterats):
-    """Create an arithmetic progress.
+def arithmetic_progression(start, step, iterats):
+    """Create an arithmetic progression.
 
     Args:
         start: first number of progress
@@ -35,7 +35,7 @@ def brain_progress_round_generator():
     progress_step = randint(1, 7)
     number_of_elements = 10
     hidden_number = randint(1, 9)
-    progress = arithmetic_progress(
+    progress = arithmetic_progression(
         progress_start, progress_step, number_of_elements,
     )
     correct_answer = progress[hidden_number]
@@ -44,6 +44,6 @@ def brain_progress_round_generator():
     return number, correct_answer
 
 
-def brain_progress_game():
+def brain_progression_game():
     """Start and play the game."""
     brain_games_start(brain_progress_round_generator, brain_progress_rules)
