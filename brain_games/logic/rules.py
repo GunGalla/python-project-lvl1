@@ -16,7 +16,7 @@ def brain_gcd_rules():
     print('Find the greatest common divisor of given numbers.')
 
 
-def brain_progression_rules():
+def brain_progress_rules():
     """Define rules for brain-progression game."""
     print('What number is missing in the progression?')
 

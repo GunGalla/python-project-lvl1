@@ -6,18 +6,21 @@ from brain_games.logic.engine import brain_games_start
 from brain_games.logic.rules import brain_calc_rules
 
 
-def find_number_answer_bc():
+def brain_calc_round_generator():
     """Define number variable and answer for brain-calc.
 
     Returns:
         return: correct number and answer variable
     """
+    number1 = randint(1, 10)
+    number2 = randint(1, 10)
     operators_list = ('+', '-', '*')
-    number = (f'{randint(1, 10)} {choice(operators_list)} {randint(1,10)}')
+    number = (f'{number1} \
+{choice(operators_list)} {number2}')
     correct_answer = str(eval(number))
     return number, correct_answer
 
 
 def brain_calc_game():
     """Start and play the game."""
-    brain_games_start(find_number_answer_bc, brain_calc_rules)
+    brain_games_start(brain_calc_round_generator, brain_calc_rules)

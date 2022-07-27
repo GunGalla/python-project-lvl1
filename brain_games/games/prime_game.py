@@ -6,7 +6,7 @@ from brain_games.logic.engine import brain_games_start
 from brain_games.logic.rules import brain_prime_rules
 
 
-def find_number_answer_bp():
+def brain_prime_round_generator():
     """Define number variable and answer for brain-prime.
 
     Returns:
@@ -25,4 +25,4 @@ def find_number_answer_bp():
 
 def brain_prime_game():
     """Start and play the game."""
-    brain_games_start(find_number_answer_bp, brain_prime_rules)
+    brain_games_start(brain_prime_round_generator, brain_prime_rules)

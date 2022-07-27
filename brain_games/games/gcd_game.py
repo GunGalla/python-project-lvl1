@@ -7,7 +7,7 @@ from brain_games.logic.engine import brain_games_start
 from brain_games.logic.rules import brain_gcd_rules
 
 
-def find_number_answer_gcd():
+def brain_gcd_round_generator():
     """Define number variable and answer for brain-gdc.
 
     Returns:
@@ -22,4 +22,4 @@ def find_number_answer_gcd():
 
 def brain_gcd_game():
     """Start and play the game."""
-    brain_games_start(find_number_answer_gcd, brain_gcd_rules)
+    brain_games_start(brain_gcd_round_generator, brain_gcd_rules)

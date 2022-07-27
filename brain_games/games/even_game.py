@@ -6,11 +6,11 @@ from brain_games.logic.engine import brain_games_start
 from brain_games.logic.rules import brain_even_rules
 
 
-def find_number_answer_be():
-    """Define number variable for brain-even.
+def brain_even_round_generator():
+    """Define number and answer variable for brain-even.
 
     Returns:
-        return: correct number variable
+        return: correct number and answer variable
     """
     number = randint(1, 100)
     if number % 2 == 0:
@@ -22,4 +22,4 @@ def find_number_answer_be():
 
 def brain_even_game():
     """Start and play the game."""
-    brain_games_start(find_number_answer_be, brain_even_rules)
+    brain_games_start(brain_even_round_generator, brain_even_rules)
