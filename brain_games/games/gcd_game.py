@@ -1,10 +1,25 @@
 """Logic module for brain-gcd game."""
 
-from brain_games.logic.engine import ask_user
-from brain_games.logic.numbers import find_number_answer_gcd
+import math
+from random import randint
+
+from brain_games.logic.engine import brain_games_start
 from brain_games.logic.rules import brain_gcd_rules
+
+
+def find_number_answer_gcd():
+    """Define number variable and answer for brain-gdc.
+
+    Returns:
+        return: correct number and answer variable
+    """
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    number = (f'{number1} {number2}')
+    correct_answer = str(math.gcd(number1, number2))
+    return number, correct_answer
 
 
 def brain_gcd_game():
     """Start and play the game."""
-    ask_user(find_number_answer_gcd, brain_gcd_rules)
+    brain_games_start(find_number_answer_gcd, brain_gcd_rules)
