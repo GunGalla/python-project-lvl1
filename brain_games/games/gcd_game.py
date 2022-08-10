@@ -3,6 +3,7 @@
 import math
 from random import randint
 
+from brain_games.logic.constants import MAX_VALUE, MIN_VALUE
 from brain_games.logic.engine import brain_games_start
 
 RULES = 'Find the greatest common divisor of given numbers.'
@@ -14,8 +15,8 @@ def brain_gcd_round_generator():
     Returns:
         return: correct number and answer variable
     """
-    first_number = randint(1, 100)
-    second_number = randint(1, 100)
+    first_number = randint(MIN_VALUE, MAX_VALUE)
+    second_number = randint(MIN_VALUE, MAX_VALUE)
     question_text = (f'{first_number} {second_number}')
     correct_answer = str(math.gcd(first_number, second_number))
     return question_text, correct_answer

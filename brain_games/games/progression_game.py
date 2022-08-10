@@ -2,9 +2,13 @@
 
 from random import randint
 
+from brain_games.logic.constants import MAX_VALUE, MIN_VALUE
 from brain_games.logic.engine import brain_games_start
 
 RULES = 'What number is missing in the progression?'
+PROGRESSION_ITERATIONS = 10
+MIN_HIDDEN_NUM_POSITION = 1
+MAX_HIDDEN_NUM_POSITION = 9
 
 
 def arithmetic_progression(start, step, iterations):
@@ -32,8 +36,13 @@ def brain_progress_round_generator():
     Returns:
         return: correct number and answer variable
     """
-    hidden_number = randint(1, 9)
-    progression = arithmetic_progression(randint(1, 10), randint(1, 7), 10)
+    hidden_number = randint(
+        MIN_HIDDEN_NUM_POSITION, MAX_HIDDEN_NUM_POSITION,
+    )
+    progression = arithmetic_progression(
+        randint(MIN_VALUE, MAX_VALUE),
+        randint(MIN_VALUE, MAX_VALUE), PROGRESSION_ITERATIONS,
+    )
     correct_answer = progression[hidden_number]
     progression[hidden_number] = '..'
     question_text = ' '.join(progression)

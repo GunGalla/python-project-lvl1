@@ -5,6 +5,9 @@ from random import choice, randint
 from brain_games.logic.engine import brain_games_start
 
 RULES = 'What is the result of the expression?'
+MIN_VALUE = 1
+MAX_VALUE = 10
+OPERATORS_LIST = ('+', '-', '*')
 
 
 def brain_calc_round_generator():
@@ -13,11 +16,10 @@ def brain_calc_round_generator():
     Returns:
         return: correct number and answer variable
     """
-    first_number = randint(1, 10)
-    second_number = randint(1, 10)
-    operators_list = ('+', '-', '*')
+    first_number = randint(MIN_VALUE, MAX_VALUE)
+    second_number = randint(MIN_VALUE, MAX_VALUE)
     question_text = (f'{first_number} \
-{choice(operators_list)} {second_number}')
+{choice(OPERATORS_LIST)} {second_number}')
     operator = question_text.split()[1]
     if operator == '+':
         correct_answer = first_number + second_number
