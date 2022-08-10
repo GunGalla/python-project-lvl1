@@ -18,8 +18,14 @@ def brain_calc_round_generator():
     operators_list = ('+', '-', '*')
     question_text = (f'{first_number} \
 {choice(operators_list)} {second_number}')
-    correct_answer = str(eval(question_text))
-    return question_text, correct_answer
+    operator = question_text.split()[1]
+    if operator == '+':
+        correct_answer = first_number + second_number
+    elif operator == '-':
+        correct_answer = first_number - second_number
+    else:
+        correct_answer = first_number * second_number
+    return question_text, str(correct_answer)
 
 
 def brain_calc_game():
