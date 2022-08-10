@@ -18,7 +18,7 @@ def brain_prime_round_generator():
     divider = 2
     while divider ** 2 <= number and number % divider != 0:
         divider += 1
-    if (divider ** 2 > number) or number != 1:
+    if (divider ** 2 > number) and number != 1:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
