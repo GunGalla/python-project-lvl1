@@ -1,6 +1,5 @@
 """Engine function for brain-games."""
 
-from brain_games.logic.question import question_to_user
 from brain_games.logic.welcome import user_name, welcome_user
 
 GAME_ROUNDS = 3
@@ -18,7 +17,7 @@ def brain_games_start(round_generator, rules):
     print(rules)
     while index < GAME_ROUNDS:
         question_text, correct_answer = round_generator()
-        question_to_user(question_text)
+        print(f'Question: {question_text}')
         user_answer = input('Your answer: ')
         if correct_answer == user_answer:
             print('Correct!')
