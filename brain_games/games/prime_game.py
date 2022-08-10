@@ -3,7 +3,8 @@
 from random import randint
 
 from brain_games.logic.engine import brain_games_start
-from brain_games.logic.rules import brain_prime_rules
+
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def brain_prime_round_generator():
@@ -26,4 +27,4 @@ def brain_prime_round_generator():
 
 def brain_prime_game():
     """Start and play the game."""
-    brain_games_start(brain_prime_round_generator, brain_prime_rules)
+    brain_games_start(brain_prime_round_generator, RULES)

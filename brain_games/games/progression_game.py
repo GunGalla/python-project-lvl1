@@ -3,10 +3,11 @@
 from random import randint
 
 from brain_games.logic.engine import brain_games_start
-from brain_games.logic.rules import brain_progress_rules
+
+RULES = 'What number is missing in the progression?'
 
 
-def arithmetic_progression(start, step, iterats):
+def arithmetic_progression(start, step, iterations):
     """Create an arithmetic progression.
 
     Args:
@@ -19,7 +20,7 @@ def arithmetic_progression(start, step, iterats):
     """
     first_num = start
     final = ''
-    for num in range(1, iterats + 1):
+    for num in range(1, iterations + 1):
         final += (str(first_num) + ' ')
         first_num += step
     return final.split()
@@ -31,13 +32,8 @@ def brain_progress_round_generator():
     Returns:
         return: correct number and answer variable
     """
-    progression_start = randint(1, 10)
-    progression_step = randint(1, 7)
-    number_of_elements = 10
     hidden_number = randint(1, 9)
-    progression = arithmetic_progression(
-        progression_start, progression_step, number_of_elements,
-    )
+    progression = arithmetic_progression(randint(1, 10), randint(1, 7), 10)
     correct_answer = progression[hidden_number]
     progression[hidden_number] = '..'
     question_text = ' '.join(progression)
@@ -46,4 +42,4 @@ def brain_progress_round_generator():
 
 def brain_progression_game():
     """Start and play the game."""
-    brain_games_start(brain_progress_round_generator, brain_progress_rules)
+    brain_games_start(brain_progress_round_generator, RULES)

@@ -3,7 +3,8 @@
 from random import choice, randint
 
 from brain_games.logic.engine import brain_games_start
-from brain_games.logic.rules import brain_calc_rules
+
+RULES = 'What is the result of the expression?'
 
 
 def brain_calc_round_generator():
@@ -23,4 +24,4 @@ def brain_calc_round_generator():
 
 def brain_calc_game():
     """Start and play the game."""
-    brain_games_start(brain_calc_round_generator, brain_calc_rules)
+    brain_games_start(brain_calc_round_generator, RULES)

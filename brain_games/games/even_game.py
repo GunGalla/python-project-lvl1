@@ -3,7 +3,8 @@
 from random import randint
 
 from brain_games.logic.engine import brain_games_start
-from brain_games.logic.rules import brain_even_rules
+
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def brain_even_round_generator():
@@ -23,4 +24,4 @@ def brain_even_round_generator():
 
 def brain_even_game():
     """Start and play the game."""
-    brain_games_start(brain_even_round_generator, brain_even_rules)
+    brain_games_start(brain_even_round_generator, RULES)

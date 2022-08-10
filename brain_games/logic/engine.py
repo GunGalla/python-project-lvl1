@@ -15,7 +15,7 @@ def brain_games_start(round_generator, rules):
     """
     index = 0
     welcome_user()
-    rules()
+    print(rules)
     while index < GAME_ROUNDS:
         question_text, correct_answer = round_generator()
         question_to_user(question_text)
