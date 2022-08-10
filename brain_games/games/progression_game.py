@@ -13,7 +13,7 @@ def arithmetic_progression(start, step, iterations):
     Args:
         start: first number of progress
         step: difference between elements
-        iterats: amount of elements
+        iterations: amount of elements
 
     Returns:
         return: arithmetic progress
