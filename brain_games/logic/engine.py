@@ -1,7 +1,5 @@
 """Engine function for brain-games."""
 
-from brain_games.logic.welcome import welcome_user
-
 GAME_ROUNDS = 3
 
 
