@@ -2,10 +2,11 @@
 
 from random import randint
 
-from brain_games.logic.constants import MAX_VALUE, MIN_VALUE
 from brain_games.logic.engine import brain_games_start
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_VALUE = 1
+MAX_VALUE = 200
 
 
 def brain_even_round_generator():

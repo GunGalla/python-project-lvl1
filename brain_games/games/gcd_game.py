@@ -3,10 +3,11 @@
 import math
 from random import randint
 
-from brain_games.logic.constants import MAX_VALUE, MIN_VALUE
 from brain_games.logic.engine import brain_games_start
 
 RULES = 'Find the greatest common divisor of given numbers.'
+MIN_VALUE = 10
+MAX_VALUE = 150
 
 
 def brain_gcd_round_generator():

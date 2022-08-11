@@ -2,10 +2,11 @@
 
 from random import randint
 
-from brain_games.logic.constants import MAX_VALUE, MIN_VALUE
 from brain_games.logic.engine import brain_games_start
 
 RULES = 'What number is missing in the progression?'
+MIN_VALUE = 1
+MAX_VALUE = 10
 PROGRESSION_ITERATIONS = 10
 MIN_HIDDEN_NUM_POSITION = 1
 MAX_HIDDEN_NUM_POSITION = 9

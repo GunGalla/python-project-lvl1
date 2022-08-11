@@ -5,8 +5,8 @@ from random import choice, randint
 from brain_games.logic.engine import brain_games_start
 
 RULES = 'What is the result of the expression?'
-MIN_VALUE = 1
-MAX_VALUE = 10
+MIN_VALUE = 0
+MAX_VALUE = 15
 OPERATORS_LIST = ('+', '-', '*')
 
 

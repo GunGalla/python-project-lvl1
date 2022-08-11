@@ -1,19 +1,21 @@
 """Engine function for brain-games."""
 
-from brain_games.logic.welcome import user_name, welcome_user
+from brain_games.logic.welcome import welcome_user
 
 GAME_ROUNDS = 3
 
 
 def brain_games_start(round_generator, rules):
-    """Define user's answer correct or not.
+    """Greets user and define user's answer correct or not.
 
     Args:
         round_generator: defines question text and correct answer
         rules: defines the current game rules
     """
     index = 0
-    welcome_user()
+    print('Welcome to the Brain Games!')
+    user_name = input('May I have your name? ')
+    print(f'Hello, {user_name}!')
     print(rules)
     while index < GAME_ROUNDS:
         question_text, correct_answer = round_generator()
