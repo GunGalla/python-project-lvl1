@@ -1,6 +1,6 @@
 """Engine function for brain-games."""
 
-GAME_ROUNDS = 3
+ROUNDS_COUNT = 3
 
 
 def brain_games_start(round_generator, rules):
@@ -15,7 +15,7 @@ def brain_games_start(round_generator, rules):
     user_name = input('May I have your name? ')
     print(f'Hello, {user_name}!')
     print(rules)
-    while index < GAME_ROUNDS:
+    while index < ROUNDS_COUNT:
         question_text, correct_answer = round_generator()
         print(f'Question: {question_text}')
         user_answer = input('Your answer: ')
