@@ -9,3 +9,7 @@ dist/
 
 # ignore vscode files
 .vscode
+
+
+# ignore pycharm files
+.idea/
