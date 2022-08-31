@@ -3,7 +3,7 @@
 import math
 from random import randint
 
-from brain_games.logic.engine import brain_games_start
+from brain_games.engine import brain_games_start
 
 RULES = 'Find the greatest common divisor of given numbers.'
 MIN_VALUE = 10

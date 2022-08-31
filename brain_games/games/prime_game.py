@@ -2,7 +2,7 @@
 
 from random import randint
 
-from brain_games.logic.engine import brain_games_start
+from brain_games.engine import brain_games_start
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_VALUE = 1

@@ -2,7 +2,7 @@
 
 from random import randint
 
-from brain_games.logic.engine import brain_games_start
+from brain_games.engine import brain_games_start
 
 RULES = 'What number is missing in the progression?'
 MIN_VALUE = 1

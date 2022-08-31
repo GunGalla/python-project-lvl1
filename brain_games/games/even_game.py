@@ -2,7 +2,7 @@
 
 from random import randint
 
-from brain_games.logic.engine import brain_games_start
+from brain_games.engine import brain_games_start
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 MIN_VALUE = 1

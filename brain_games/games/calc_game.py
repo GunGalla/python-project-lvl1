@@ -2,7 +2,7 @@
 
 from random import choice, randint
 
-from brain_games.logic.engine import brain_games_start
+from brain_games.engine import brain_games_start
 
 RULES = 'What is the result of the expression?'
 MIN_VALUE = 0
@@ -18,15 +18,17 @@ def brain_calc_round_generator():
     """
     first_number = randint(MIN_VALUE, MAX_VALUE)
     second_number = randint(MIN_VALUE, MAX_VALUE)
-    question_text = (f'{first_number} \
-{choice(OPERATORS_LIST)} {second_number}')
+    operator = choice(OPERATORS_LIST)
+    question_text = f'{first_number} {operator} {second_number}'
     operator = question_text.split()[1]
     if operator == '+':
         correct_answer = first_number + second_number
     elif operator == '-':
         correct_answer = first_number - second_number
-    else:
+    elif operator == '*':
         correct_answer = first_number * second_number
+    else:
+        print('Operation not supported!')
     return question_text, str(correct_answer)
 
 
