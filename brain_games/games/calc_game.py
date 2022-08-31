@@ -21,6 +21,7 @@ def brain_calc_round_generator():
     operator = choice(OPERATORS_LIST)
     question_text = f'{first_number} {operator} {second_number}'
     operator = question_text.split()[1]
+    correct_answer = ''
     if operator == '+':
         correct_answer = first_number + second_number
     elif operator == '-':

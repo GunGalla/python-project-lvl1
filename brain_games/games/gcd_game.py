@@ -18,7 +18,7 @@ def brain_gcd_round_generator():
     """
     first_number = randint(MIN_VALUE, MAX_VALUE)
     second_number = randint(MIN_VALUE, MAX_VALUE)
-    question_text = (f'{first_number} {second_number}')
+    question_text = f'{first_number} {second_number}'
     correct_answer = str(math.gcd(first_number, second_number))
     return question_text, correct_answer
 
